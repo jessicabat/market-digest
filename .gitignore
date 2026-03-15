@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+
+# Generated type declarations
+auto-imports.d.ts
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# OS/editor artifacts
+.DS_Store
+**/.DS_Store
+*.log

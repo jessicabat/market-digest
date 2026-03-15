@@ -3,11 +3,10 @@ import react from "@vitejs/plugin-react-swc";
 import { resolve } from "node:path";
 import AutoImport from "unplugin-auto-import/vite";
 
-// For GitHub Pages: set to "/<repo-name>/" if deploying to username.github.io/repo-name
-// Leave as "/" if using a custom domain or deploying to username.github.io (user site)
-const base = process.env.BASE_PATH || "/market-digest/";
+export default defineConfig(({ command }) => {
+  const base = process.env.BASE_PATH || (command === "serve" ? "/" : "/market-digest/");
 
-export default defineConfig({
+  return {
   plugins: [
     react(),
     AutoImport({
@@ -73,4 +72,5 @@ export default defineConfig({
     port: 3000,
     host: "0.0.0.0",
   },
+  };
 });
