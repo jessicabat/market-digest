@@ -20,7 +20,7 @@ export default function Navigation({ isScrolled }: NavigationProps) {
         {/* Logo */}
         <div className="flex items-center gap-1 cursor-pointer">
           <img 
-            src="https://public.readdy.ai/ai/img_res/16ad920c-dcfa-46d9-a16d-d66054417422.png" 
+            src={`${import.meta.env.BASE_URL}images/logo.png`} 
             alt="Market Digest Logo" 
             className="w-8 h-8"
           />

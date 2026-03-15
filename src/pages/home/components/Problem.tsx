@@ -7,7 +7,7 @@ export default function Problem() {
   const [isVisible, setIsVisible] = useState(false);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
-  const problemImage = 'https://static.readdy.ai/image/0fc8cb635025f591c426b84298c18e46/3ce2a0e4623b4b6094a0173d8b04a3a8.png';
+  const problemImage = `${import.meta.env.BASE_URL}images/digest.png`;
 
   useEffect(() => {
     // Guard against environments where IntersectionObserver is not available.

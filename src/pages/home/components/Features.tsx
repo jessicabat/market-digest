@@ -24,23 +24,25 @@ export default function Features() {
     return () => observer.disconnect();
   }, []);
 
+  const baseUrl = import.meta.env.BASE_URL;
+
   const features = [
     {
-      image: 'https://static.readdy.ai/image/0fc8cb635025f591c426b84298c18e46/ca67e493a230aea3ff88e0cb822e1bf2.png',
+      image: `${baseUrl}images/digest.png`,
       imageAlt: 'Market Digest streaming summary showing Executive Summary, Market Implications, and Beginner-Friendly breakdown with word-by-word typing animation',
       title: 'AI Streaming Summaries',
       description:
         'Three-tier analysis — Executive Summary, Market Implications, and a Beginner-Friendly breakdown — streamed word-by-word with a typing animation for each topic.',
     },
     {
-      image: 'https://static.readdy.ai/image/0fc8cb635025f591c426b84298c18e46/8763969ad350645d40d4d9870c69d47c.png',
+      image: `${baseUrl}images/sources.png`,
       imageAlt: 'Expanded View Validated Sources panel showing article titles, publishers, and text excerpts for claim verification',
       title: 'Full Source Transparency',
       description:
         'Every summary links back to its original articles. Expandable source panel shows title, publisher, and a 400-character excerpt so you can verify any claim.',
     },
     {
-      image: 'https://static.readdy.ai/image/0fc8cb635025f591c426b84298c18e46/f1af9b55c49317502787cd8c6a1f017f.png',
+      image: `${baseUrl}images/chat.png`,
       imageAlt: "Market Digest RAG chat interface with a user question and AI response grounded in today's news articles",
       title: "Chat With Today's News",
       description:

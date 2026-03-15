@@ -1,5 +1,5 @@
 {
-  "name": "market-digest-site",
+  "name": "market-digest",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -17,7 +17,6 @@
     "react-i18next": "^15.6.0",
     "react-router-dom": "^7.6.3",
     "i18next-browser-languagedetector": "^8.2.0",
-    "recharts": "3.2.0",
     "lucide-react": "^0.469.0"
   },
   "devDependencies": {

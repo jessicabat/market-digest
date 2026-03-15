@@ -9,7 +9,7 @@ export default function Hero() {
     setIsVisible(true);
   }, []);
 
-  const heroImage = 'https://static.readdy.ai/image/0fc8cb635025f591c426b84298c18e46/983c98e09831f35b2e4e64d21e09fca5.png';
+  const heroImage = `${import.meta.env.BASE_URL}images/landing.png`;
 
   return (
     <section
