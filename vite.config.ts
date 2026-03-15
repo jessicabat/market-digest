@@ -5,7 +5,7 @@ import AutoImport from "unplugin-auto-import/vite";
 
 // For GitHub Pages: set to "/<repo-name>/" if deploying to username.github.io/repo-name
 // Leave as "/" if using a custom domain or deploying to username.github.io (user site)
-const base = process.env.BASE_PATH || "/";
+const base = process.env.BASE_PATH || "/market-digest/";
 
 export default defineConfig({
   plugins: [
